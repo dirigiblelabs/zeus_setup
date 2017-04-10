@@ -52,6 +52,14 @@ spec:
               value: /usr/local/tomcat/dirigible/cmis
             - name: initLoggingDirectory
               value: /tomcat/logs
+            - name: repositoryProviderMaster
+              value: git
+            - name: masterRepositoryGitTarget
+              value: master_git_repository
+            - name: masterRepositoryGitLocation
+              value: https://github.com/delchev/master_repository_test.git
+            - name: masterRepositoryGitBranch
+              value: origin/master
       serviceAccountName: zeus
   volumeClaimTemplates:
     - metadata:
