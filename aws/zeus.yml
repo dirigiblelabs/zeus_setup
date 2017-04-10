@@ -57,7 +57,7 @@ spec:
             - name: masterRepositoryGitTarget
               value: master_git_repository
             - name: masterRepositoryGitLocation
-              value: https://github.com/delchev/master_repository_test.git
+              value: https://github.com/ThuF/master_repository.git
             - name: masterRepositoryGitBranch
               value: origin/master
       serviceAccountName: zeus
