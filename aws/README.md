@@ -6,7 +6,7 @@ Here are described the steps of how to deploy the [Zeus](https://github.com/diri
 - Kubernetes Cluster up and running on AWS
 - Configured Kubernetes CLI
 
-## Deployment:
+## Deploy:
 Run the following command to deploy the Zeus in the Kubernetes Cluster.
 
 `kubectl create -f https://raw.githubusercontent.com/dirigiblelabs/zeus_setup/master/aws/zeus.yml`
@@ -20,3 +20,9 @@ Run the following command to deploy the Zeus in the Kubernetes Cluster.
 - [ClusterRole](https://kubernetes.io/docs/resources-reference/v1.6/#clusterrole-v1beta1-rbac) - *zeus*
 - [ClusterRoleBinding](https://kubernetes.io/docs/resources-reference/v1.6/#clusterrolebinding-v1beta1-rbac) - *zeus*
   - _**Note:** currently the ingress is configured to work with the proprietary ***.sap.onvms.com** DNS_
+
+## Undeploy
+Run the following command to undeploy the Zeus and the created resources from the Kubernetes Cluster.
+
+`kubectl delete -f https://raw.githubusercontent.com/dirigiblelabs/zeus_setup/master/aws/zeus.yml`
+
