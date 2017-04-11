@@ -1,12 +1,12 @@
 # Kubernetes & AWS
 Here are described the steps of how to deploy the [Zeus](https://github.com/dirigiblelabs/zeus) Cloud Management Suite in Kubernetes Cluster running on AWS.
 
-## Prerequisites:
+## Prerequisites
 - AWS credentials
 - Kubernetes Cluster up and running on AWS
 - Configured Kubernetes CLI
 
-## Deploy:
+## Deploy
 Run the following command to deploy the Zeus in the Kubernetes Cluster.
 
 `kubectl create -f https://raw.githubusercontent.com/dirigiblelabs/zeus_setup/master/deployments/k8s/aws/zeus.yml`
