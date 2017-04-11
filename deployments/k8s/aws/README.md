@@ -9,7 +9,7 @@ Here are described the steps of how to deploy the [Zeus](https://github.com/diri
 ## Deploy:
 Run the following command to deploy the Zeus in the Kubernetes Cluster.
 
-`kubectl create -f https://raw.githubusercontent.com/dirigiblelabs/zeus_setup/master/aws/zeus.yml`
+`kubectl create -f https://raw.githubusercontent.com/dirigiblelabs/zeus_setup/master/deployments/k8s/aws/zeus.yml`
 
 #### The following resources will be created:
 - [Namespace](https://kubernetes.io/docs/resources-reference/v1.6/#namespace-v1-core) - *zeus*
@@ -24,5 +24,5 @@ Run the following command to deploy the Zeus in the Kubernetes Cluster.
 ## Undeploy
 Run the following command to undeploy the Zeus and the created resources from the Kubernetes Cluster.
 
-`kubectl delete -f https://raw.githubusercontent.com/dirigiblelabs/zeus_setup/master/aws/zeus.yml`
+`kubectl delete -f https://raw.githubusercontent.com/dirigiblelabs/zeus_setup/master/deployments/k8s/aws/zeus.yml`
 
