@@ -34,7 +34,7 @@ spec:
       terminationGracePeriodSeconds: 10
       containers:
         - name: dirigible
-          image: dirigiblelabs/dirigible-tomcat:latest
+          image: dirigiblelabs/dirigible-tomcat:2.8.170821-R
           ports:
             - containerPort: 8080
               name: zeus
